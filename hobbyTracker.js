@@ -18,7 +18,7 @@ function uniqueHobbies(log) { // this function creates a new array based on the 
 
 function longSessions(log, minMinutes) { // this function creates an array based on minMinutes
   return log.filter(entry => entry.minutes > minMinutes); // if entry.minutes is greater than minMinutes parameter, it pushes to the returned array
-} // I would suggest adding .length to the return, as it makes more sense for me
+} // Suggestion: Add .length to the return, as it makes more sense for me
 
 function countMood(log, moodType) { // this function takes two parameters
   return log.filter(entry => entry.mood === moodType).length; // the function now pushes all log moods equal to moodType parameter to a new array
