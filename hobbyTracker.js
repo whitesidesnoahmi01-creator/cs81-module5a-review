@@ -17,8 +17,8 @@ function uniqueHobbies(log) { // this function creates a new array based on the 
 }
 
 function longSessions(log, minMinutes) { // this function creates an array based on minMinutes
-  return log.filter(entry => entry.minutes > minMinutes); // if entry.minutes is greater than minMinutes parameter, it pushes to the returned  
-}
+  return log.filter(entry => entry.minutes > minMinutes); // if entry.minutes is greater than minMinutes parameter, it pushes to the returned array
+} // I would suggest adding .length to the return, as it makes more sense for me
 
 function countMood(log, moodType) { // this function takes two parameters
   return log.filter(entry => entry.mood === moodType).length; // the function now pushes all log moods equal to moodType parameter to a new array
@@ -28,3 +28,5 @@ console.log("Total time spent:", totalTime(hobbyLog), "minutes");
 console.log("Unique hobbies:", uniqueHobbies(hobbyLog));
 console.log("Sessions longer than 30 min:", longSessions(hobbyLog, 30));
 console.log("Number of relaxed sessions:", countMood(hobbyLog, "relaxed"));
+//new test
+console.log("Sessions longer than 15 mins:", longSessions(hobbyLog, 15));
